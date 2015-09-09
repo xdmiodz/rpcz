@@ -11,9 +11,7 @@ set(RPCZ_SOURCES
     ${PROTO_SOURCES})
 set(RPCZ_LIB_DEPS ${ZeroMQ_LIBRARIES}
                   ${PROTOBUF_LIBRARIES}
-                  ${Boost_THREAD_LIBRARY}
-                  ${Boost_SYSTEM_LIBRARY}
-                  ${Boost_DATE_TIME_LIBRARY})
+                  ${Boost_LIBRARIES})
 
 if (RPCZ_ENABLE_IPV6)
 	set_source_files_properties(
